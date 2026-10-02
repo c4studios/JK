@@ -1,0 +1,231 @@
+{
+  "title": "Choose the visual world for JK Plumbing",
+  "question": "Previews are on each card (desktop and phone, built in code with JK's real logo, photos and number). The roll assigned the sewer service diagram. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Sewer Service Diagram",
+      "kicker": "THE ROLL",
+      "lineage": "NSW sewer service diagrams and hydraulic drawings",
+      "thesis": "The page is drawn as the plumbing plan of your own house: tap where it's playing up, then call.",
+      "palette": [
+        "#f5f6f3",
+        "#16181a",
+        "#ef1a20",
+        "#067abe",
+        "#8a8f93"
+      ],
+      "materials": [
+        "plotted ink on white bond",
+        "hydraulic line types and hatching",
+        "real job photos pinned as details"
+      ],
+      "viewport": "A cut-away Macarthur house in hydraulic linework fills the sheet; headline and number sit beside it; licence, ABN and phone live in the drawing's title block.",
+      "risk": "Turns into a cold blueprint if the drawing gets fussy or the copy goes technical. The house section has to be drawn with real craft.",
+      "raised": [
+        {
+          "from": "challenger-step-row",
+          "raise": "One unbroken line: the sewer main runs the whole page from the house to the street, and a flow marker rides it to show where you are."
+        },
+        {
+          "from": "challenger-jackfield",
+          "raise": "Line type carries the meaning, colour only confirms it: sewer heavy, stormwater dashed, gas broken with a G, hot red, cold blue."
+        },
+        {
+          "from": "challenger-zine",
+          "raise": "Rank is drawing scale: the house at 1:100, each problem as an enlarged 1:10 detail, never a type ladder for its own sake."
+        },
+        {
+          "from": "challenger-azulejo",
+          "raise": "Everything snaps to the sheet's border zones (A to F, 1 to 8) and every cross-reference cites its zone."
+        },
+        {
+          "from": "challenger-jacquard",
+          "raise": "Every symbol carries a detail bubble that opens the real photo or flyer line behind it."
+        }
+      ],
+      "comp": ".impeccable/mocks/decision/a-sewer-diagram-preview.png"
+    },
+    {
+      "id": "model-pick",
+      "label": "Signwritten Canopy",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Australian tradie ute signwriting",
+      "thesis": "The site is signwritten like their own ute: the number at back-door scale on black canopy panels.",
+      "palette": [
+        "#141414",
+        "#e93224",
+        "#1c80c0",
+        "#f7f7f5",
+        "#c9ccce"
+      ],
+      "materials": [
+        "cut vinyl on a black canopy",
+        "brushed aluminium",
+        "reflective tape"
+      ],
+      "viewport": "Their real ute, with the 24/7 badge cropped out, and the phone number running full width in the canopy's red bar.",
+      "risk": "The most familiar route: lots of trade sites lean on vehicle-wrap graphics, and it can tip into flyer-loud.",
+      "comp": ".impeccable/mocks/decision/b-canopy-preview.png"
+    },
+    {
+      "id": "challenger-letterpress",
+      "label": "Letterpress Trade Poster",
+      "verdict": "competitive",
+      "lineage": "Hatch Show Print wood-type posters",
+      "thesis": "Stacked wood type that names the problem and the number, in JK's own red and blue.",
+      "palette": [
+        "#ece6d6",
+        "#1b1a19",
+        "#ef1a20",
+        "#0b5fa5"
+      ],
+      "materials": [
+        "wood type",
+        "off-register ink",
+        "poster stock"
+      ],
+      "viewport": "BLOCKED. LEAKING. GONE COLD. stacked full width, the number printed as the red pass.",
+      "case": "Fuses cleanly and is the fastest read, but Macarthur homeowners don't know gig posters the way they know their own house plans.",
+      "risk": "Off-register ink on poster stock can read rough or cheap, which you've ruled out.",
+      "comp": ".impeccable/mocks/decision/c-letterpress-preview.png",
+      "hero": "https://impeccable.style/worlds/cards/posters-covers-sleeves-hatch-show-print-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/posters-covers-sleeves-hatch-show-print.webp"
+    },
+    {
+      "id": "challenger-step-row",
+      "label": "Rhythm Machine Step Row",
+      "verdict": "declined",
+      "lineage": "early-80s drum machines",
+      "thesis": "Services as sixteen lit step keys with a chase light running the row.",
+      "palette": [
+        "#2b2b2b",
+        "#d8342b",
+        "#f08a24",
+        "#f2c53d",
+        "#f4f1ea"
+      ],
+      "materials": [
+        "silkscreened panel",
+        "lit step keys"
+      ],
+      "viewport": "A row of problem keys, with the number in the tempo readout.",
+      "case": "Fuses poorly: neither homeowners nor builders read plumbing through a drum machine.",
+      "kept": "One unbroken line with a marker that always shows where you are.",
+      "risk": "Novelty that gets between the visitor and the phone number.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-drum-machine-step-row-hero.webp"
+    },
+    {
+      "id": "challenger-jackfield",
+      "label": "Normalled Jackfield",
+      "verdict": "declined",
+      "lineage": "machine-room patch schedules",
+      "thesis": "Services as numbered lanes tied to defaults by amber link lines.",
+      "palette": [
+        "#0b0b0c",
+        "#f2a03d"
+      ],
+      "materials": [
+        "black glass",
+        "amber link lines"
+      ],
+      "viewport": "Numbered amber lanes on black glass, one per service.",
+      "case": "Fuses poorly: it's an operations console, not something a stressed homeowner recognises.",
+      "kept": "Meaning carried by line type, never by colour alone.",
+      "risk": "Reads as software, cold and remote.",
+      "hero": "https://impeccable.style/worlds/cards/operate-b-normalled-jackfield-hero.webp"
+    },
+    {
+      "id": "challenger-zine",
+      "label": "Copy-Shop Zine",
+      "verdict": "declined",
+      "lineage": "photocopied zines",
+      "thesis": "A typed photocopied sheet, the heading blown up until it breaks.",
+      "palette": [
+        "#e8b33c",
+        "#1a1a1a",
+        "#f1efe6"
+      ],
+      "materials": [
+        "coloured copy stock",
+        "platen-enlarged type"
+      ],
+      "viewport": "One goldenrod sheet, a typed column, the number enlarged off the edge.",
+      "case": "Works as a letterbox flyer but reads rough or cheap, which you've ruled out.",
+      "kept": "Rank by magnification: details are enlarged views, never a type ladder.",
+      "risk": "Looks cheap for a licensed trade.",
+      "hero": "https://impeccable.style/worlds/cards/rw-copy-shop-zine-interior-hero.webp"
+    },
+    {
+      "id": "challenger-azulejo",
+      "label": "Azulejo Station Hall",
+      "verdict": "declined",
+      "lineage": "Portuguese tiled station halls",
+      "thesis": "Narrative panels painted in cobalt straight across a tile grid.",
+      "palette": [
+        "#1d4e9e",
+        "#f5f3ee",
+        "#d9a62e"
+      ],
+      "materials": [
+        "tin-glazed tile",
+        "cobalt wash"
+      ],
+      "viewport": "A cobalt tiled bathroom scene with a cartouche for the number.",
+      "case": "Tiles touch the bathroom work, but painted narrative is Lisbon, not Macarthur.",
+      "kept": "Everything snaps to the sheet's grid zones and cross-references cite them.",
+      "risk": "Decorative and foreign to the audience.",
+      "hero": "https://impeccable.style/worlds/cards/architecture-places-azulejo-station-hall-hero.webp"
+    },
+    {
+      "id": "challenger-jacquard",
+      "label": "Punched Jacquard",
+      "verdict": "declined",
+      "lineage": "jacquard looms and punch cards",
+      "thesis": "Punched instruction rows weaving into a finished motif.",
+      "palette": [
+        "#0f1a3a",
+        "#c99a2e",
+        "#efe6cf"
+      ],
+      "materials": [
+        "silk",
+        "punched cards"
+      ],
+      "viewport": "Instruction rows resolving into the logo in gold weft.",
+      "case": "Fuses poorly: no link to plumbing or to the people calling.",
+      "kept": "Every symbol traces to its evidence through a detail bubble.",
+      "risk": "Ornamental, with no product truth behind it.",
+      "hero": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-jacquard-punched-brocade-hero.webp"
+    }
+  ],
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A clean trades site: job-photo hero, big call button, services, areas, form, done at full craft.",
+    "palette": [
+      "#ffffff",
+      "#121417",
+      "#067abe",
+      "#ef1a20"
+    ],
+    "materials": [
+      "clean grid",
+      "job photography"
+    ],
+    "viewport": "A job photo behind the headline and a large call button, services underneath.",
+    "risk": "Indistinguishable from every other plumber, by design.",
+    "comp": ".impeccable/mocks/decision/d-standard-preview.png"
+  },
+  "steer": true
+}
