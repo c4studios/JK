@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "public/**",
+    // Source media and an old Figma Make export, never built or served.
+    "media-source/**",
     "next-env.d.ts",
   ]),
 ]);

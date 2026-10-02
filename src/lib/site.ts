@@ -6,7 +6,6 @@ export const site = {
   plumbingLicence: "477160C",
   location: "Campbelltown",
   serviceArea: "Campbelltown, servicing all Sydney",
-  url: "https://www.jkplumbingsolutions.com.au",
   phone: {
     display: "0447 798 126",
     tel: "0447798126",

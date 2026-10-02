@@ -13,17 +13,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// No metadataBase, canonical or og:url on purpose: this concept must not claim
+// the business's own domain. On Vercel, social image URLs resolve against the
+// deployment's own production URL.
 export const metadata: Metadata = {
-  metadataBase: new URL(site.url),
   title: {
     default: "JK Plumbing Solutions | Campbelltown Plumber Servicing Sydney",
     template: "%s | JK Plumbing Solutions",
   },
   description:
     "Campbelltown based plumber servicing Sydney. Call JK Plumbing Solutions for blocked drains, leaks, hot water, gas, renovations, new builds and commercial maintenance.",
-  alternates: {
-    canonical: "/",
-  },
   applicationName: site.name,
   authors: [{ name: site.legalName }],
   creator: site.legalName,
@@ -32,7 +31,6 @@ export const metadata: Metadata = {
     title: "JK Plumbing Solutions | Campbelltown Plumber Servicing Sydney",
     description:
       "Blocked, leaking, cold or building? Call a licensed Campbelltown plumber for a practical next step.",
-    url: site.url,
     siteName: site.name,
     locale: "en_AU",
     type: "website",
@@ -42,9 +40,17 @@ export const metadata: Metadata = {
     title: "JK Plumbing Solutions",
     description: "Campbelltown based plumber servicing Sydney repairs, maintenance and project work.",
   },
+  // Concept site: never indexed. next.config.ts sends the matching
+  // X-Robots-Tag header on every response.
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
   },
   formatDetection: {
     telephone: false,

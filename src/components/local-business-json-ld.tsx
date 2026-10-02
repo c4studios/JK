@@ -4,10 +4,11 @@ export function LocalBusinessJsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "Plumber"],
-    "@id": `${site.url}/#business`,
+    // No url or domain-based @id: this concept must not claim the business's
+    // own website.
+    "@id": "#business",
     name: site.legalName,
     alternateName: site.name,
-    url: site.url,
     telephone: site.phone.international,
     email: site.email,
     founder: {
