@@ -62,8 +62,12 @@ body {
   color: #fff;
 }
 
+/* Tailwind preflight sets links to text-decoration: inherit; put the
+   underline back so inline links read as links. Component links that are
+   plates or bands opt out explicitly. */
 a {
   color: inherit;
+  text-decoration-line: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 0.2em;
 }
@@ -1172,6 +1176,5 @@ a {
 /* ---------------------------------------------------------------------------
    404 */
 .notfound {
-  padding-block: clamp(3rem, 10vw, 7rem);
-  border-bottom: var(--rule-heavy);
+  padding-block: clamp(3rem, 10vw, 7rem) 0;
 }
